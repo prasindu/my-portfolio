@@ -1,10 +1,32 @@
-/**
-* Template Name: DevFolio
-* Updated: Nov 17 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+// Toggle the .pa-fixed-header class when the user 
+// scroll 100px 
+
+window.onscroll = () => {scrollNavbar()};
+
+scrollNavbar = () => {
+    // Target elements
+    const navBar = document.getElementById("header");
+    const links = document.querySelectorAll("#header a");
+
+  if (document.documentElement.scrollTop > 100) {
+    navBar.classList.add("pa-fixed-header");
+
+    // Change the color of links on scroll
+    for (let i = 0; i < links.length; i++) {
+        const element = links[i];
+        element.classList.add('text-black');
+    }
+
+  } else {
+    navBar.classList.remove("pa-fixed-header");
+    
+    // Change the color of links back to default
+    for (let i = 0; i < links.length; i++) {
+        const element = links[i];
+        element.classList.remove('text-black');
+    }
+  }
+}
 (function() {
   "use strict";
 
