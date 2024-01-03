@@ -294,6 +294,7 @@ body{
 /*........... hero ........*/ 
 .hero{
     position: relative;
+    height: 100%;
    
 }
 .hero .hero-content{
@@ -327,21 +328,41 @@ body{
   .bg-drak{
     background-color: black;
   }
+  .about-img{
+    visibility: hidden;
+
+  }
+  .A{
+    width: 100%;
+    height: 100%;
+  }
   @media (max-width: 768px) {
     .hero .hero-title {
-      font-size: 1.5rem;
-      position: relative;
-      top: -170px;
-      left: -80px;
+      font-size: 2.5rem;
+      position: relative;  
+    }
+    .A video{
+      visibility: hidden;
+    }
+    .A{
+      background-image: url('../img/new010.jpg');
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .container01{
+      margin-right: 60px;
+      margin-top: 50px;
     }
   }
   @media (max-width: 768px) {
     .hero .hero-subtitle {
-      font-size: 1.0rem;
+      font-size: 1.5rem;
       position: relative;
-      top: -190px;
-      left: -50px;
+      
     }
+    
+
   }
   
 
@@ -366,6 +387,18 @@ body{
   }
   .progress{
     padding-right: 30px;
+  }
+  @media (max-width: 768px){
+    .img-thumbnail{
+      width: 150px;
+      height: auto;
+    }
+    .imgmain{
+      justify-content: center;
+      display: flex;
+    }
+
+
   }
 /*...........About end ........*/ 
 
@@ -504,6 +537,9 @@ body{
   .contact-mf .box-pl2 {
     margin-top: 3rem;
     padding-left: 0rem;
+  }
+  #contact {
+    padding: 0px;
   }
   
 
