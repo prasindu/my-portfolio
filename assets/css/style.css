@@ -5,6 +5,10 @@ body{
     padding: 0;
     height: 100vh;
 }
+@font-face{
+  font-family:my01;
+  src: url('../img/Majestic\ Kingdome.otf');
+}
 /*............scroll navbar...........*/
 
 .pa-fixed-header {
@@ -319,6 +323,7 @@ body{
     color: #ffffff;
     font-weight: 600;
     font-size: 4rem;
+    font-family: my01;
   
   }
   .hero-subtitle{
@@ -339,7 +344,7 @@ body{
   }
   @media (max-width: 768px) {
     .hero .hero-title {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
       position: relative;  
     }
     .A video{
