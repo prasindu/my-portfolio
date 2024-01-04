@@ -35,7 +35,7 @@ body{
 /**
 * Desktop Navigation 
 */
-.A{
+.AB{
   text-decoration: none;
   color: white;
 }
@@ -533,21 +533,24 @@ body{
 
 /*........... Contact........*/ 
 
-.footer-paralax {
-  padding: 4rem 0 0 0;
+
+@media(max-width: 767px){
+  #contact{
+    padding: 15px;
+  }
 }
 
-.contact-mf {
-  margin-top: 4rem;
-}
 
-@media (min-width: 767px) {
+@media (max-width: 767px) {
   .contact-mf .box-pl2 {
-    margin-top: 3rem;
+    margin-top: 2rem;
     padding-left: 0rem;
   }
   #contact {
-    padding: 0px;
+    padding: 10px;
+  }
+  .contact-mf {
+    margin-top: 1rem;
   }
   
 
@@ -583,10 +586,23 @@ body{
   background-size: cover;
 }
 #contact{
-  padding: 50px;
+  padding: 30px;
   background-color: white;
   box-shadow: 3px 3px 10px 10PX rgb(68, 67, 67);
 
+}
+#aa{
+  list-style: none;
+}
+
+
+.AA{
+  list-style: none;
+  
+}
+.AA li{
+  display: inline;
+  margin-left: 20px;
 }
 
 
